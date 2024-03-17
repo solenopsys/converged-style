@@ -2,10 +2,16 @@
   "name": "@solenopsys/converged-style",
   "module": "index.ts",
   "type": "module",
+  "dependencies": {
+    "@biomejs/biome": "latest"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "latest"
+  },
+  "scripts": {
+    "format": "bunx @biomejs/biome format src/* --write",
   }
 }
