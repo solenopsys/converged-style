@@ -1,1 +1,1 @@
-export * from './styles-injector';
+export * from "./styles-injector";
