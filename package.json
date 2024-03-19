@@ -16,6 +16,6 @@
   },
   "scripts": {
     "format": "bunx @biomejs/biome format src/**/*.ts --write",
-    "bundle": "bun build  src/index.ts --minify --outfile dist/index.js   "
+    "bundle": "bun build  src/index.ts    --minify --outfile dist/index.js   "
   }
 }
