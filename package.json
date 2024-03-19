@@ -4,7 +4,9 @@
   "type": "module",
   "dependencies": {
     "@biomejs/biome": "latest",
-    "@unocss/core": "^0.58.6"
+    "@unocss/core": "latest",
+    "@unocss/preset-attributify": "latest",
+    "@unocss/preset-uno": "latest"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -13,6 +15,7 @@
     "typescript": "latest"
   },
   "scripts": {
-    "format": "bunx @biomejs/biome format src/**/*.ts --write"
+    "format": "bunx @biomejs/biome format src/**/*.ts --write",
+    "bundle": "bun build  src/index.ts --minify --outfile dist/index.js   "
   }
 }
