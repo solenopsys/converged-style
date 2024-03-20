@@ -1,9 +1,21 @@
 {
   "name": "@solenopsys/converged-style",
   "description": "Styles injector",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "module": "index.ts",
   "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./plugin": {
+      "import": "./dist/plugins/lightningcss-plugin.js",
+      "types": "./dist/plugins/lightningcss-plugin.d.ts"
+    }
+ 
+  },
   "dependencies": {
     "@biomejs/biome": "latest",
     "@types/node": "^20.11.30",
