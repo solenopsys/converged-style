@@ -28,5 +28,8 @@
     "**/dist/**",
     "**/node_modules/**",
 
-  ]
+  ],
+  "external": [
+		
+	]
 }
